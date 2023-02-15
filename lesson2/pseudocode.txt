@@ -1,0 +1,35 @@
+1. A Method that returns the sum of two integers
+
+Casual
+Welcome the user to the program
+
+Prompt the user to enter the first number
+Get first integer from the user and store the value in a variable
+
+Prompt the user to enter the second number
+Get second integer from the user and store the value in another variable
+
+Perform addition operation on the two variables and store the result in another variable
+
+Return the result of the addition operation
+
+Formal
+START
+
+PRINT "Welcome to the sum program"
+
+PRINT "Enter the first number:"
+GET first integer from the user
+SET number1 = first integer received from the user
+
+PRINT "Enter the second number:"
+GET second integer from the user
+SET number2 = second integer received from the user
+
+SET result = number1 + number2
+
+PRINT result
+
+END
+
+

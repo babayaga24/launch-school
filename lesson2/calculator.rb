@@ -2,8 +2,9 @@ def prompt(message)
   Kernel.puts(">> #{message}")
 end
 
-def valid_number?(num)
-  num.to_i() != 0
+def valid_int?(num)
+  puts num.to_i
+  num.to_i.integer?
 end
 
 def operation_to_message(opt)
@@ -45,7 +46,7 @@ loop do # main loop
     prompt("What's the first number?")
     number1 = Kernel.gets().chomp()
 
-    if valid_number?(number1)
+    if valid_int?(number1)
       break
     else
       prompt("Hmm.. that doesn't look like a valid number")
@@ -57,7 +58,7 @@ loop do # main loop
     prompt("What's the second number?")
     number2 = Kernel.gets().chomp()
 
-    if valid_number?(number2)
+    if valid_int?(number2)
       break
     else
       prompt("Hmm.. that doesn't look like a valid number")
